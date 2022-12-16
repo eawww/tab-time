@@ -1,38 +1,39 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  padding: 2rem;
+  overflow: hidden;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App, button {
+  font-family: serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.tab {
+  border-radius: 6px 6px 0px 0px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.yearTab button {
+  font-family: monospace;
 }
 
-.App-link {
-  color: #61dafb;
+.tab.selected {
+  background-color: bisque;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tabOverflower {
+  width: max-content;
+}
+
+.tabContainer {
+  overflow-x: scroll;
+}
+
+.monthContainer {
+  padding: 3rem;
+}
+
+.appointmentButton {
+  width: 8rem;
+  margin: 0.5rem;
 }
