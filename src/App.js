@@ -4,6 +4,10 @@ import { Calendar } from 'calendar';
 import logo from './logo.svg';
 import './App.css';
 
+// JANKIDATYS 2022
+// Ryan, Dr. Becca, and Eric
+// Warning: this code may also be jankily written
+
 const CAL = new Calendar();
 console.log('monthymonth', CAL.monthDates(2012, 0));
 
@@ -32,7 +36,7 @@ const Week = ({week}) => {
     {
       week.map(day => <button
         className="appointmentButton"
-        onClick={() => alert('Appointment Scheduled')}
+        onClick={() => alert('Ok')}
       >
         {`Schedule Appointment for ${day.toDateString()}`}
         
